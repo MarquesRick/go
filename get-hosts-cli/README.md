@@ -43,4 +43,14 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+In the root folder, run this command in the terminal to get the IP address of a host
+
+```shell
+go run main.go ip --host amazon.com.br
+```
+
+In the root folder, run this command in the terminal to get the server name of a host
+
+```shell
+go run main.go server --host amazon.com.br
+```
