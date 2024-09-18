@@ -35,13 +35,13 @@ go test ./...
 For run all the tests in verbose mode
 
 ```shell
-go test ./.. -v
+go test ./.. --v
 ```
 
 For run all the tests and see the percentage of coverage
 
 ```shell
-go test ./.. -v
+go test ./.. --cover
 ```
 
 Generate the file containing the coverage information
