@@ -1,5 +1,8 @@
 {
     "cSpell.words": [
         "urfave"
-    ]
+    ],
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontLigatures": true
 }
