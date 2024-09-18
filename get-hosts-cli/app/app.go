@@ -25,19 +25,19 @@ func Process() *cli.App {
 			Name:   "ip",
 			Usage:  "Search IPs on internet",
 			Flags:  flags,
-			Action: searchIps,
+			Action: SearchIps,
 		},
 		{
 			Name:   "servers",
 			Usage:  "Search server name on internet",
 			Flags:  flags,
-			Action: searchServer,
+			Action: SearchServer,
 		},
 	}
 	return app
 }
 
-func searchIps(c *cli.Context) {
+func SearchIps(c *cli.Context) {
 	host := c.String("host")
 
 	ips, err := net.LookupIP(host)
@@ -51,7 +51,7 @@ func searchIps(c *cli.Context) {
 
 }
 
-func searchServer(c *cli.Context) {
+func SearchServer(c *cli.Context) {
 	host := c.String("host")
 
 	servers, err := net.LookupNS(host) // name server

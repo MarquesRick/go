@@ -4,6 +4,7 @@
 
 - [About](#about)
 - [Usage](#usage)
+- [Tests](#tests)
 
 ## About <a name = "about"></a>
 
@@ -21,4 +22,42 @@ In the root folder, run this command in the terminal to get the server name of a
 
 ```shell
 go run main.go server --host amazon.com.br
+```
+
+## Tests <a name = "tests"></a>
+
+For run all the tests files in a project
+
+```shell
+go test ./...
+```
+
+For run all the tests in verbose mode
+
+```shell
+go test ./.. -v
+```
+
+For run all the tests and see the percentage of coverage
+
+```shell
+go test ./.. -v
+```
+
+Generate the file containing the coverage information
+
+```shell
+go test ./... --coverprofile coverage.txt
+```
+
+Tool to read the coverage information file and output in terminal
+
+```shell
+go tool cover --func=coverage.txt
+```
+
+Generate an html file containing which lines are not covered and which are
+
+```shell
+go tool cover --func=coverage.txt
 ```
